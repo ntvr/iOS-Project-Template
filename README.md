@@ -29,3 +29,18 @@ rm -rf $PROJECT_TEMPLATE_FOLDER
 5. Reorganize added folders as you like. Suggested order though is Protocol > Generic use component > Data definition > Implementation. Also the dependent are always below  their dependency. For example LoginService (Protocol) > DefaultLoginRouter > DefaultLoginService.
 6. Additional project setup, certificates, profiles, ...
 
+## Enable SwiftLint
+1. Run CocoaPods installation in your project folder:
+```bash
+pod install
+```
+
+2. Add New Run Script Build phase with following code:
+
+```bash
+${PODS_ROOT}/SwiftLint/swiftlint`
+```
+## Setup project signing
+1. For multiple configurations follow [guide](https://zeemee.engineering/how-to-set-up-multiple-schemes-configurations-in-xcode-for-your-react-native-ios-app-7da4b5237966)
+2. Setup [HockeyApp](https://hockeyapp.net)/[Firebase](https://firebase.google.com)
+3. Setup [Fastlane](https://fastlane.tools)
