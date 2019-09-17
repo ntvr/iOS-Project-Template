@@ -4,12 +4,9 @@ Because current state of Xcode Project templates is not satisfying and this set 
 It is meant to be adjusted within the project itself on per project basis.
 
 ## Installation
-### Create new project
 1. Start by creating new project using NTVR Single View Code project template.
-
-### Clone sources
-1. Navigate to your main source folder (most of the time shares the name with xcproj file).
-2. Copy sources from this repository using following code:
+3. Navigate to your main source folder (most of the time shares the name with xcproj file).
+3. Copy sources from this repository using following code:
 
 ```bash
 # VARIABLES
@@ -27,7 +24,7 @@ mv "$PROJECT_TEMPLATE_FOLDER/.gitignore" .
 rm -rf $PROJECT_TEMPLATE_FOLDER
 ```
 
-3. Add newly cloned folders to your project from Xcode. Groups with associated folder should be created (yellow folders).
-4. Reorganize added folders as you like. Suggested order though is Protocol > Generic use component > Data definition > Implementation. Also the dependent are always below  their dependency. For example LoginService (Protocol) > DefaultLoginRouter > DefaultLoginService.
-5. Additional project setup, certificates, profiles, ...
+4. Add newly cloned folders to your project from Xcode. Groups with associated folder should be created (yellow folders).
+5. Reorganize added folders as you like. Suggested order though is Protocol > Generic use component > Data definition > Implementation. Also the dependent are always below  their dependency. For example LoginService (Protocol) > DefaultLoginRouter > DefaultLoginService.
+6. Additional project setup, certificates, profiles, ...
 
