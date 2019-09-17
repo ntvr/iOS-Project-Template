@@ -5,7 +5,7 @@ It is meant to be adjusted within the project itself on per project basis.
 
 ## Installation
 1. Start by creating new project using NTVR Single View Code project template.
-3. Navigate to your main source folder (most of the time shares the name with xcproj file).
+3. Navigate into your main source folder (most of the time shares the name with `xcodeproj` file and is on the same level).
 3. Copy sources from this repository using following code:
 
 ```bash
