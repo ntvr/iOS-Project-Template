@@ -9,6 +9,6 @@ target 'OAuthTest' do
   pod 'SnapKit'
   pod 'SwiftLint'
   pod 'Swinject'
-  pod 'OAuthSwift', '~> 2.0'
+  # pod 'OAuthSwift', '~> 2.0'
 
 end
