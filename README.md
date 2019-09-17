@@ -38,7 +38,7 @@ pod install
 2. Add New Run Script Build phase with following code:
 
 ```bash
-${PODS_ROOT}/SwiftLint/swiftlint`
+${PODS_ROOT}/SwiftLint/swiftlint
 ```
 ## Setup project signing
 1. For multiple configurations follow [guide](https://zeemee.engineering/how-to-set-up-multiple-schemes-configurations-in-xcode-for-your-react-native-ios-app-7da4b5237966)
