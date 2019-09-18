@@ -54,8 +54,8 @@ class CredentialAuthorizing: Authorizing {
         _ manager: SessionManager,
         retry request: Request,
         with error: Error,
-        completion: @escaping RequestRetryCompletion)
-    {
+        completion: @escaping RequestRetryCompletion
+    ) {
         lock.lock(); defer { lock.unlock() }
 
         let errorCode = (request.task?.response as? HTTPURLResponse)?.statusCode

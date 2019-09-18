@@ -16,7 +16,8 @@ enum AuthorizingError: Error {
 }
 
 /// AccesToken has to be class to be exposeable to ObjC
-@objc class CredentialHeaders: NSObject {
+@objc
+class CredentialHeaders: NSObject {
     let headers: [String: String]
     let expiration: Date?
 

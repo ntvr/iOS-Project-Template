@@ -31,7 +31,8 @@ extension RouterComponents {
         let request = try URLRequest(
             url: url(for: route),
             method: method(for: route),
-            headers: headers(for: route))
+            headers: headers(for: route)
+        )
         return try encoding(for: route)
             .encode(request, with: parameters(for: route))
     }
@@ -68,7 +69,6 @@ protocol Service: class {
     var router: AnyRouter<Route> { get }
     /// Provider for authorization for underlying session
     var authorizing: Authorizing? { get }
-
 }
 extension Service {
     /// - Wraps route and router into RouteToURLConvertor which implements URLRequestConvertible.

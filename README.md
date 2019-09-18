@@ -1,4 +1,4 @@
-# iOS-Project-Template
+# iOS Project Template
 Because current state of Xcode Project templates is not satisfying and this set of tools is not generic enough to be used as a framework, it needs to be copied into the project sources manually. 
 
 It is meant to be adjusted within the project itself on per project basis.
@@ -40,6 +40,7 @@ pod install
 ```bash
 ${PODS_ROOT}/SwiftLint/swiftlint
 ```
+
 ## Setup project signing
 1. For multiple configurations follow [guide](https://zeemee.engineering/how-to-set-up-multiple-schemes-configurations-in-xcode-for-your-react-native-ios-app-7da4b5237966)
 2. Setup [HockeyApp](https://hockeyapp.net)/[Firebase](https://firebase.google.com)

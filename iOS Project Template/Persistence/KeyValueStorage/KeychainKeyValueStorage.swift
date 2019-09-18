@@ -20,7 +20,7 @@ final class KeychainKeyValueStorage: KeyValueStorage {
     }
 
     func load(for key: String) throws -> Data {
-        let queryResult: AnyObject? = try getResult(account: key, single: true)
+        let queryResult: AnyObject? = try getResult(single: true, account: key)
 
         guard let item = queryResult as? KeychainQuery else {
             throw  KeyValueStorageError.missingData
@@ -42,8 +42,11 @@ final class KeychainKeyValueStorage: KeyValueStorage {
         newQuery[kSecValueData as String] = data as AnyObject
         if biometricAuthRequired {
             let sacObject = SecAccessControlCreateWithFlags(
-                kCFAllocatorDefault, kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
-                .userPresence, nil)
+                kCFAllocatorDefault,
+                kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
+                .userPresence,
+                nil
+            )
             newQuery[kSecAttrAccessControl as String] = sacObject!
         }
 
@@ -63,9 +66,11 @@ final class KeychainKeyValueStorage: KeyValueStorage {
         }
     }
 
-    private func getResult(account: String? = nil,
-                           single: Bool,
-                           biometricAuthMessage: String? = nil) throws -> AnyObject? {
+    private func getResult(
+        single: Bool,
+        account: String? = nil,
+        biometricAuthMessage: String? = nil
+    ) throws -> AnyObject? {
         var query = getQuery(account: account)
         query[kSecMatchLimit as String] = single ? kSecMatchLimitOne : kSecMatchLimitAll
         query[kSecReturnAttributes as String] = kCFBooleanTrue

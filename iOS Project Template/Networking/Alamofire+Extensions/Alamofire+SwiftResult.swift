@@ -32,5 +32,3 @@ extension Swift.Result {
         }
     }
 }
-
-

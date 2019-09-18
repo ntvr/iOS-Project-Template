@@ -16,15 +16,19 @@ struct TokenResponse: Decodable {
 }
 
 /// Provides API calss to login and refresh
-protocol LoginService: Service {
+protocol LoginService {
     /// Logs in user with given username and password
-    func login(username: String,
-               password: String,
-               completion: @escaping (Swift.Result<TokenResponse, Error>) -> Void)
+    func login(
+        username: String,
+        password: String,
+        completion: @escaping (Swift.Result<TokenResponse, Error>) -> Void
+    )
 
     /// Refreshes access token with given username and password
     /// The endpoint/route might differ in comparison to login, but will be same most of the times.
-    func refresh(username: String,
-                 password: String,
-                 completion: @escaping (Swift.Result<TokenResponse, Error>) -> Void)
+    func refresh(
+        username: String,
+        password: String,
+        completion: @escaping (Swift.Result<TokenResponse, Error>) -> Void
+    )
 }

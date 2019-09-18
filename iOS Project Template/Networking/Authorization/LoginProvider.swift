@@ -57,8 +57,11 @@ class LoginProvider: LoginProviding {
 
         let credentialStorage = SingleKeyValueStorage<LoginCredentials>(
             key: "login.credential",
-            storage: KeychainKeyValueStorage(serviceIdentifier: "com.stembera.michal.login.provider",
-                                             biometricAuthRequired: false))
+            storage: KeychainKeyValueStorage(
+                serviceIdentifier: "com.stembera.michal.login.provider",
+                biometricAuthRequired: false
+            )
+        )
         self.credentialStorage = credentialStorage
 
         if let credentials = credentialStorage.value {
@@ -78,10 +81,12 @@ class LoginProvider: LoginProviding {
 
             switch result {
             case let .success(tokenResponse):
-                let newCredentials = LoginCredentials(accessToken: tokenResponse.token,
-                                                      accessTokenExpiration: tokenResponse.expiration,
-                                                      username: username,
-                                                      password: password)
+                let newCredentials = LoginCredentials(
+                    accessToken: tokenResponse.token,
+                    accessTokenExpiration: tokenResponse.expiration,
+                    username: username,
+                    password: password
+                )
                 strongSelf.loginStatus = .loggedIn(credentials: newCredentials )
                 strongSelf.credentialStorage.value = newCredentials
                 completion(.success(()))
@@ -133,10 +138,12 @@ extension LoginProvider: CredentialProviding {
 
             switch result {
             case let .success(tokenResponse):
-                let newCredentials = LoginCredentials(accessToken: tokenResponse.token,
-                                                      accessTokenExpiration: tokenResponse.expiration,
-                                                      username: credentials.username,
-                                                      password: credentials.password)
+                let newCredentials = LoginCredentials(
+                    accessToken: tokenResponse.token,
+                    accessTokenExpiration: tokenResponse.expiration,
+                    username: credentials.username,
+                    password: credentials.password
+                )
                 strongSelf.credentialStorage.value = newCredentials
                 completion(.success(newCredentials.credentialHeaders))
                 strongSelf.credentialEventSource

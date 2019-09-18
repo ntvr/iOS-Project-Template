@@ -13,9 +13,11 @@ import UIKit
     /// Process opened URL from another app, parse out the data, if not interested return.
     /// - For security measures it should be checked whether the source app is Safari
     /// - Returns: Flag whether the URL was handled or not
-    func handleOpened(url: URL,
-                      by app: UIApplication,
-                      with options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool
+    func handleOpened(
+        url: URL,
+        by app: UIApplication,
+        with options: [UIApplication.OpenURLOptionsKey: Any]
+    ) -> Bool
 }
 extension ApplicationURLHandling {
     /// Checks whether the app was opened by Safari
