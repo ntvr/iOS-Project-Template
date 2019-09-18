@@ -11,12 +11,13 @@ It is meant to be adjusted within the project itself on per project basis.
 ```bash
 # VARIABLES
 PROJECT_TEMPLATE_FOLDER="iOS-Project-Template-unique-krhgkjangkngdl"
+SOURCE_FOLDER_NAME="⚠️Fill in here⚠️"
 
-# CLONE AND TAKE
+# CLONE AND COPY
 git clone --depth 1 --branch master https://github.com/ntvr/iOS-Project-Template.git $PROJECT_TEMPLATE_FOLDER
-mv "$PROJECT_TEMPLATE_FOLDER/Utility" .
-mv "$PROJECT_TEMPLATE_FOLDER/Persistence" .
-mv "$PROJECT_TEMPLATE_FOLDER/Networking" .
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Utility" $SOURCE_FOLDER_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Persistence" $SOURCE_FOLDER_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Networking" $SOURCE_FOLDER_NAME
 mv "$PROJECT_TEMPLATE_FOLDER/Podfile" .
 mv "$PROJECT_TEMPLATE_FOLDER/.swiftlint.yml" .
 mv "$PROJECT_TEMPLATE_FOLDER/.gitignore" .
