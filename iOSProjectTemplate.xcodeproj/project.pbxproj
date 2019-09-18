@@ -24,9 +24,9 @@
 		901E23002332155900010CD2 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22ED2332155900010CD2 /* LoginProvider.swift */; };
 		901E23012332155900010CD2 /* OAuthProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22EE2332155900010CD2 /* OAuthProviding.swift */; };
 		901E23022332155900010CD2 /* LoginProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22EF2332155900010CD2 /* LoginProviding.swift */; };
-		901E23032332155900010CD2 /* DefaultLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F22332155900010CD2 /* DefaultLoginRouter.swift */; };
-		901E23042332155900010CD2 /* DefaultLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F32332155900010CD2 /* DefaultLoginService.swift */; };
-		901E23052332155900010CD2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F42332155900010CD2 /* LoginService.swift */; };
+		901E23032332155900010CD2 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F22332155900010CD2 /* LoginRouter.swift */; };
+		901E23042332155900010CD2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F32332155900010CD2 /* LoginService.swift */; };
+		901E23052332155900010CD2 /* LoginServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F42332155900010CD2 /* LoginServicing.swift */; };
 		901E23062332155900010CD2 /* Router+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F52332155900010CD2 /* Router+Service.swift */; };
 		D8FA8AD1C514BE21B02821E1 /* Pods_iOSProjectTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9625F90100F5506AAD2501 /* Pods_iOSProjectTemplate.framework */; };
 /* End PBXBuildFile section */
@@ -52,9 +52,9 @@
 		901E22ED2332155900010CD2 /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
 		901E22EE2332155900010CD2 /* OAuthProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthProviding.swift; sourceTree = "<group>"; };
 		901E22EF2332155900010CD2 /* LoginProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProviding.swift; sourceTree = "<group>"; };
-		901E22F22332155900010CD2 /* DefaultLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLoginRouter.swift; sourceTree = "<group>"; };
-		901E22F32332155900010CD2 /* DefaultLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLoginService.swift; sourceTree = "<group>"; };
-		901E22F42332155900010CD2 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		901E22F22332155900010CD2 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		901E22F32332155900010CD2 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		901E22F42332155900010CD2 /* LoginServicing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServicing.swift; sourceTree = "<group>"; };
 		901E22F52332155900010CD2 /* Router+Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Service.swift"; sourceTree = "<group>"; };
 		C92F9055A9B51A280F860259 /* Pods-iOSProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F17E24FDDBC417C61499B736 /* Pods-iOS Project Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Project Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,9 +186,9 @@
 		901E22F12332155900010CD2 /* LoginService */ = {
 			isa = PBXGroup;
 			children = (
-				901E22F42332155900010CD2 /* LoginService.swift */,
-				901E22F22332155900010CD2 /* DefaultLoginRouter.swift */,
-				901E22F32332155900010CD2 /* DefaultLoginService.swift */,
+				901E22F42332155900010CD2 /* LoginServicing.swift */,
+				901E22F22332155900010CD2 /* LoginRouter.swift */,
+				901E22F32332155900010CD2 /* LoginService.swift */,
 			);
 			path = LoginService;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 			files = (
 				901E22FC2332155900010CD2 /* SessionManager+Authorizing.swift in Sources */,
 				901E23002332155900010CD2 /* LoginProvider.swift in Sources */,
-				901E23032332155900010CD2 /* DefaultLoginRouter.swift in Sources */,
+				901E23032332155900010CD2 /* LoginRouter.swift in Sources */,
 				901E22F92332155900010CD2 /* UserDefaultsKeyValueStorage.swift in Sources */,
 				901E22F62332155900010CD2 /* KeyValueStorage.swift in Sources */,
 				901E23022332155900010CD2 /* LoginProviding.swift in Sources */,
@@ -350,8 +350,8 @@
 				901E23012332155900010CD2 /* OAuthProviding.swift in Sources */,
 				901E22F72332155900010CD2 /* KeychainKeyValueStorage.swift in Sources */,
 				901E22FB2332155900010CD2 /* Alamofire+SwiftResult.swift in Sources */,
-				901E23052332155900010CD2 /* LoginService.swift in Sources */,
-				901E23042332155900010CD2 /* DefaultLoginService.swift in Sources */,
+				901E23052332155900010CD2 /* LoginServicing.swift in Sources */,
+				901E23042332155900010CD2 /* LoginService.swift in Sources */,
 				901E22FE2332155900010CD2 /* Authorizing.swift in Sources */,
 				901E23062332155900010CD2 /* Router+Service.swift in Sources */,
 				901E22FA2332155900010CD2 /* EventSource.swift in Sources */,

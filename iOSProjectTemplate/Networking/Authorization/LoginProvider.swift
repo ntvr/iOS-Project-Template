@@ -30,7 +30,7 @@ class LoginProvider: LoginProviding {
     // Private propeties
     private let lock = NSRecursiveLock()
     private let credentialStorage: SingleKeyValueStorage<LoginCredentials>
-    private let loginService: LoginService
+    private let loginService: LoginServicing
     private var loginStatus: LoginStatus
     // Public properties
     let loginEventSource = EventSource<LoginProvidingDelegate>()
@@ -52,7 +52,7 @@ class LoginProvider: LoginProviding {
         }
     }
 
-    init(loginService: LoginService) {
+    init(loginService: LoginServicing) {
         self.loginService = loginService
 
         let credentialStorage = SingleKeyValueStorage<LoginCredentials>(

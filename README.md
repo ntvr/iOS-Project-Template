@@ -31,15 +31,15 @@ rm -rf $PROJECT_TEMPLATE_FOLDER
 5. Reorganize added folders as you like. Suggested order though is Protocol > Generic use component > Data definition > Implementation. Also the dependent are always below  their dependency. For example LoginService (Protocol) > DefaultLoginRouter > DefaultLoginService.
 
 ## Enable SwiftLint
-1. Run CocoaPods installation in your project folder:
-```bash
-pod install
-```
-
-2. Add New Run Script Build phase with following code:
+1. Add New Run Script Build phase with following code:
 
 ```bash
-${PODS_ROOT}/SwiftLint/swiftlint
+if which "${PODS_ROOT}/SwiftLint/swiftlint" > /dev/null; then
+    # if you have project name with spaces or special characters
+    swiftlint_cmd = "${PODS_ROOT}/SwiftLint/swiftlint"; "${swiftlint_cmd[@]}"
+else
+    echo "error: SwiftLint not installed, run `pod install`"
+fi
 ```
 
 ## Setup project signing

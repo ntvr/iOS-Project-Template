@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-struct DefaultLoginRouter: RouterComponents {
+struct LoginRouter: RouterComponents {
     typealias Route = DefaultLoginService.Route
 
     private let baseURL = "https://www.google.cz" // FIXME: Correct baseURL and other things
