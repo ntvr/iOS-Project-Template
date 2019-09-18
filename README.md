@@ -29,7 +29,6 @@ rm -rf $PROJECT_TEMPLATE_FOLDER
 
 4. Add newly cloned folders to your project from Xcode. Groups with associated folder should be created (yellow folders).
 5. Reorganize added folders as you like. Suggested order though is Protocol > Generic use component > Data definition > Implementation. Also the dependent are always below  their dependency. For example LoginService (Protocol) > DefaultLoginRouter > DefaultLoginService.
-6. Additional project setup, certificates, profiles, ...
 
 ## Enable SwiftLint
 1. Run CocoaPods installation in your project folder:
