@@ -5,13 +5,14 @@ It is meant to be adjusted within the project itself on per project basis.
 
 ## Installation
 1. Start by creating new project using NTVR Single View Code project template.
-3. Navigate into your main source folder (most of the time shares the name with `xcodeproj` file and is on the same level).
+3. Navigate into your main project folder (includes `xcodeproj` file).
 3. Copy sources from this repository using following code:
 
 ```bash
 # VARIABLES
 PROJECT_TEMPLATE_FOLDER="iOS-Project-Template-unique-krhgkjangkngdl"
-SOURCE_FOLDER_NAME="⚠️Fill in here⚠️"
+NEW_PROJECT_FILE=`ls | grep *.xcodeproj`
+NEW_SOURCE_FOLDER_NAME=${NEW_PROJECT_FILE%".xcodeproj"}
 
 # CLONE AND COPY
 git clone --depth 1 --branch master https://github.com/ntvr/iOS-Project-Template.git $PROJECT_TEMPLATE_FOLDER
