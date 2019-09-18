@@ -16,9 +16,9 @@ NEW_SOURCE_FOLDER_NAME=${NEW_PROJECT_FILE%".xcodeproj"}
 
 # CLONE AND COPY
 git clone --depth 1 --branch master https://github.com/ntvr/iOS-Project-Template.git $PROJECT_TEMPLATE_FOLDER
-mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Utility" $SOURCE_FOLDER_NAME
-mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Persistence" $SOURCE_FOLDER_NAME
-mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Networking" $SOURCE_FOLDER_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Utility" $NEW_SOURCE_FOLDER_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Persistence" $NEW_SOURCE_FOLDER_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Networking" $NEW_SOURCE_FOLDER_NAME
 mv "$PROJECT_TEMPLATE_FOLDER/Podfile" .
 mv "$PROJECT_TEMPLATE_FOLDER/.swiftlint.yml" .
 mv "$PROJECT_TEMPLATE_FOLDER/.gitignore" .
