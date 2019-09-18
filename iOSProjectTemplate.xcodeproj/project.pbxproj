@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56AAE7169B6C9956EDD20842 /* Pods_iOS_Project_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771C27B9A27A269049DBA58A /* Pods_iOS_Project_Template.framework */; };
 		901E22CF233214A900010CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22CE233214A900010CD2 /* AppDelegate.swift */; };
 		901E22D1233214A900010CD2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22D0233214A900010CD2 /* RootViewController.swift */; };
 		901E22D3233214AB00010CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901E22D2233214AB00010CD2 /* Assets.xcassets */; };
@@ -29,11 +28,12 @@
 		901E23042332155900010CD2 /* DefaultLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F32332155900010CD2 /* DefaultLoginService.swift */; };
 		901E23052332155900010CD2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F42332155900010CD2 /* LoginService.swift */; };
 		901E23062332155900010CD2 /* Router+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F52332155900010CD2 /* Router+Service.swift */; };
+		D8FA8AD1C514BE21B02821E1 /* Pods_iOSProjectTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9625F90100F5506AAD2501 /* Pods_iOSProjectTemplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		771C27B9A27A269049DBA58A /* Pods_iOS_Project_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Project_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		901E22CB233214A900010CD2 /* iOS Project Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Project Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A9625F90100F5506AAD2501 /* Pods_iOSProjectTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSProjectTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901E22CB233214A900010CD2 /* iOSProjectTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProjectTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901E22CE233214A900010CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		901E22D0233214A900010CD2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		901E22D2233214AB00010CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +56,10 @@
 		901E22F32332155900010CD2 /* DefaultLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLoginService.swift; sourceTree = "<group>"; };
 		901E22F42332155900010CD2 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		901E22F52332155900010CD2 /* Router+Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Service.swift"; sourceTree = "<group>"; };
+		C92F9055A9B51A280F860259 /* Pods-iOSProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F17E24FDDBC417C61499B736 /* Pods-iOS Project Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Project Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template.debug.xcconfig"; sourceTree = "<group>"; };
 		F9C7D3FFCE22D5B1F806E3EB /* Pods-iOS Project Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Project Template.release.xcconfig"; path = "Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template.release.xcconfig"; sourceTree = "<group>"; };
+		FA87BA6DD6639B73E3F6D65E /* Pods-iOSProjectTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.debug.xcconfig"; path = "Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56AAE7169B6C9956EDD20842 /* Pods_iOS_Project_Template.framework in Frameworks */,
+				D8FA8AD1C514BE21B02821E1 /* Pods_iOSProjectTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +77,7 @@
 		79AE07A24425F3CD09B2A7E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				771C27B9A27A269049DBA58A /* Pods_iOS_Project_Template.framework */,
+				3A9625F90100F5506AAD2501 /* Pods_iOSProjectTemplate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,7 +85,7 @@
 		901E22C2233214A900010CD2 = {
 			isa = PBXGroup;
 			children = (
-				901E22CD233214A900010CD2 /* iOS Project Template */,
+				901E22CD233214A900010CD2 /* iOSProjectTemplate */,
 				901E22CC233214A900010CD2 /* Products */,
 				ADA5C3EAA1BFFD7741F396A0 /* Pods */,
 				79AE07A24425F3CD09B2A7E1 /* Frameworks */,
@@ -93,12 +95,12 @@
 		901E22CC233214A900010CD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				901E22CB233214A900010CD2 /* iOS Project Template.app */,
+				901E22CB233214A900010CD2 /* iOSProjectTemplate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		901E22CD233214A900010CD2 /* iOS Project Template */ = {
+		901E22CD233214A900010CD2 /* iOSProjectTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				901E22E32332155900010CD2 /* Utility */,
@@ -110,7 +112,7 @@
 				901E22D4233214AB00010CD2 /* LaunchScreen.storyboard */,
 				901E22D7233214AB00010CD2 /* Info.plist */,
 			);
-			path = "iOS Project Template";
+			path = iOSProjectTemplate;
 			sourceTree = "<group>";
 		};
 		901E22DD2332155900010CD2 /* Persistence */ = {
@@ -196,6 +198,8 @@
 			children = (
 				F17E24FDDBC417C61499B736 /* Pods-iOS Project Template.debug.xcconfig */,
 				F9C7D3FFCE22D5B1F806E3EB /* Pods-iOS Project Template.release.xcconfig */,
+				FA87BA6DD6639B73E3F6D65E /* Pods-iOSProjectTemplate.debug.xcconfig */,
+				C92F9055A9B51A280F860259 /* Pods-iOSProjectTemplate.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -203,9 +207,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		901E22CA233214A900010CD2 /* iOS Project Template */ = {
+		901E22CA233214A900010CD2 /* iOSProjectTemplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 901E22DA233214AB00010CD2 /* Build configuration list for PBXNativeTarget "iOS Project Template" */;
+			buildConfigurationList = 901E22DA233214AB00010CD2 /* Build configuration list for PBXNativeTarget "iOSProjectTemplate" */;
 			buildPhases = (
 				6FDA89D810F9DE2C507DF24D /* [CP] Check Pods Manifest.lock */,
 				901E230723321C7800010CD2 /* SwiftLint */,
@@ -218,9 +222,9 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Project Template";
+			name = iOSProjectTemplate;
 			productName = "iOS Project Template";
-			productReference = 901E22CB233214A900010CD2 /* iOS Project Template.app */;
+			productReference = 901E22CB233214A900010CD2 /* iOSProjectTemplate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 901E22C6233214A900010CD2 /* Build configuration list for PBXProject "iOS Project Template" */;
+			buildConfigurationList = 901E22C6233214A900010CD2 /* Build configuration list for PBXProject "iOSProjectTemplate" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,7 +255,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				901E22CA233214A900010CD2 /* iOS Project Template */,
+				901E22CA233214A900010CD2 /* iOSProjectTemplate */,
 			);
 		};
 /* End PBXProject section */
@@ -275,15 +279,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6FDA89D810F9DE2C507DF24D /* [CP] Check Pods Manifest.lock */ = {
@@ -301,7 +305,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOS Project Template-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iOSProjectTemplate-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -487,7 +491,7 @@
 		};
 		901E22DB233214AB00010CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F17E24FDDBC417C61499B736 /* Pods-iOS Project Template.debug.xcconfig */;
+			baseConfigurationReference = FA87BA6DD6639B73E3F6D65E /* Pods-iOSProjectTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,7 +510,7 @@
 		};
 		901E22DC233214AB00010CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C7D3FFCE22D5B1F806E3EB /* Pods-iOS Project Template.release.xcconfig */;
+			baseConfigurationReference = C92F9055A9B51A280F860259 /* Pods-iOSProjectTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		901E22C6233214A900010CD2 /* Build configuration list for PBXProject "iOS Project Template" */ = {
+		901E22C6233214A900010CD2 /* Build configuration list for PBXProject "iOSProjectTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				901E22D8233214AB00010CD2 /* Debug */,
@@ -535,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		901E22DA233214AB00010CD2 /* Build configuration list for PBXNativeTarget "iOS Project Template" */ = {
+		901E22DA233214AB00010CD2 /* Build configuration list for PBXNativeTarget "iOSProjectTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				901E22DB233214AB00010CD2 /* Debug */,
