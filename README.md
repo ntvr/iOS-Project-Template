@@ -30,16 +30,19 @@ cp -R XcodeProjectTemplates/*.xctemplate "$PROJECT_TEMPLATE_DIR"
 # VARIABLES
 PROJECT_TEMPLATE_FOLDER="iOS-Project-Template-unique-krhgkjangkngdl"
 NEW_PROJECT_FILE=`ls | grep *.xcodeproj`
-NEW_SOURCE_FOLDER_NAME=${NEW_PROJECT_FILE%".xcodeproj"}
+NEW_PROJECT_NAME=${NEW_PROJECT_FILE%".xcodeproj"}
 
 # CLONE AND COPY
 git clone --depth 1 --branch master https://github.com/ntvr/iOS-Project-Template.git $PROJECT_TEMPLATE_FOLDER
-mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Utility" $NEW_SOURCE_FOLDER_NAME
-mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Persistence" $NEW_SOURCE_FOLDER_NAME
-mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Networking" $NEW_SOURCE_FOLDER_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Utility" $NEW_PROJECT_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Persistence" $NEW_PROJECT_NAME
+mv "$PROJECT_TEMPLATE_FOLDER/iOSProjectTemplate/Networking" $NEW_PROJECT_NAME
 mv "$PROJECT_TEMPLATE_FOLDER/Podfile" .
 mv "$PROJECT_TEMPLATE_FOLDER/.swiftlint.yml" .
 mv "$PROJECT_TEMPLATE_FOLDER/.gitignore" .
+
+# REPLACE TARGET NAME IN PODFILE
+sed  -i "" "s/iOSProjectTemplate/$NEW_PROJECT_NAME/g" Podfile
 
 # CLEANUP CLONED PROJECT
 rm -rf $PROJECT_TEMPLATE_FOLDER
