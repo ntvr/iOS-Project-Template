@@ -79,6 +79,8 @@ excluded: # paths to ignore during linting. overridden by `included`.
   - Carthage
   - Pods
   - fastlane
+  - XcodeFileTemplates # Because template repo contains Xcode templates as well
+  - XcodeProjectTemplates # Because template repo contains Xcode templates as well
 # parameterized rules are first parameterized as a warning level, then error level.
 function_body_length:
   - 150 # warning
