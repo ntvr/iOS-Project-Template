@@ -9,6 +9,7 @@ target 'iOSProjectTemplate' do
   pod 'SnapKit'
   pod 'SwiftLint'
   pod 'Swinject'
+  pod 'SnapKit'
   # pod 'OAuthSwift', '~> 2.0'
 
 end
