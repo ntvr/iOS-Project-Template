@@ -3,7 +3,25 @@ Because current state of Xcode Project templates is not satisfying and this set 
 
 It is meant to be adjusted within the project itself on per project basis.
 
-## Installation
+## Install Xcode templates
+You can copy the templates manually into Xcode's template folder.
+
+Or you can move them using this script:
+
+```bash
+TEMPLATE_DIR="$HOME/Library/Developer/Xcode/Templates"
+FILE_TEMPLATE_DIR="$TEMPLATE_DIR/File Templates/Netvor/"
+PROJECT_TEMPLATE_DIR="$TEMPLATE_DIR/Project Templates/Netvor/"
+
+mkdir "$FILE_TEMPLATE_DIR" 2> /dev/null
+cp -R XcodeFileTemplates/*.xctemplate "$FILE_TEMPLATE_DIR"
+
+mkdir "$PROJECT_TEMPLATE_DIR" 2> /dev/null
+cp -R XcodeProjectTemplates/*.xctemplate "$PROJECT_TEMPLATE_DIR"
+
+```
+
+## Create project
 1. Start by creating new project using NTVR Single View Code project template.
 3. Navigate into your main project folder (includes `xcodeproj` file).
 3. Copy sources from this repository using following code:

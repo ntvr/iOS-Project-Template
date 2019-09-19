@@ -33,4 +33,10 @@ class ___VARIABLE_productName___Service: ___VARIABLE_productName___Servicing, Se
             .request(urlConvertible(for: <#Route#>))
             .responseDecodable(type: <#Model#>.self) { completion($0.result.swiftResult) }
     }
+
+    func <#function#>(completion: @escaping (Swift.Result<<#Model#>, Error>) -> Void) {
+        sessionManager
+            .request(urlConvertible(for: <#Route#>))
+            .responseDecodable(type: <#Model#>.self) { completion($0.result.swiftResult) }
+    }
 }
