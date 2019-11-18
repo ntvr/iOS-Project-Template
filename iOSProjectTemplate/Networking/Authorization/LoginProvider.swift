@@ -52,13 +52,17 @@ class LoginProvider: LoginProviding {
         }
     }
 
-    init(loginService: LoginServicing) {
+    init(
+        loginService: LoginServicing,
+        // FIXME: Provide correct group identifier
+        keychainServiceIdentifier: String = "com.stembera.michal.login.provider"
+    ) {
         self.loginService = loginService
 
         let credentialStorage = SingleKeyValueStorage<LoginCredentials>(
             key: "login.credential",
             storage: KeychainKeyValueStorage(
-                serviceIdentifier: "com.stembera.michal.login.provider",
+                serviceIdentifier: keychainServiceIdentifier,
                 biometricAuthRequired: false
             )
         )

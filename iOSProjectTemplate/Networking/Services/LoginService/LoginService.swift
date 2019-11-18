@@ -27,7 +27,7 @@ class LoginService: LoginServicing, Service {
 
     /// - Should not have any authorization whatsoever, because login should be publicly accessible.
     /// - Should use shared SessionManager which does not have authorizing already assigned - gets overriden.
-    required init<R: Routing>(
+    required init<R: Router>(
         router: R,
         authorizing: Authorizing? = nil,
         sessionManager: SessionManager = .default

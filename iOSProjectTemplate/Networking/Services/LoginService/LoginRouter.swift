@@ -10,32 +10,32 @@ import Foundation
 import Alamofire
 
 struct LoginRouter: RouterComponents {
-    typealias Route = DefaultLoginService.Route
+    typealias Route = LoginService.Route
 
     private let baseURL = "https://www.google.cz" // FIXME: Correct baseURL and other things
 
-    func method(for route: DefaultLoginService.Route) -> HTTPMethod {
+    func method(for route: LoginService.Route) -> HTTPMethod {
         switch route {
         case .login, .refresh:
             return .post
         }
     }
 
-    func url(for route: DefaultLoginService.Route) -> URLConvertible {
+    func url(for route: LoginService.Route) -> URLConvertible {
         switch route {
         case .login, .refresh:
             return baseURL + "/login"
         }
     }
 
-    func encoding(for route: DefaultLoginService.Route) -> ParameterEncoding {
+    func encoding(for route: LoginService.Route) -> ParameterEncoding {
         switch route {
         case .login, .refresh:
             return JSONEncoding.default
         }
     }
 
-    func parameters(for route: DefaultLoginService.Route) -> Parameters? {
+    func parameters(for route: LoginService.Route) -> Parameters? {
         switch route {
         case let .login(username, password), let .refresh(username, password):
             return [
@@ -45,7 +45,7 @@ struct LoginRouter: RouterComponents {
         }
     }
 
-    func headers(for route: DefaultLoginService.Route) -> HTTPHeaders? {
+    func headers(for route: LoginService.Route) -> HTTPHeaders? {
         switch route {
         case .login, .refresh:
             return nil
