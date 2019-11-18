@@ -28,6 +28,8 @@
 		901E23042332155900010CD2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F32332155900010CD2 /* LoginService.swift */; };
 		901E23052332155900010CD2 /* LoginServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F42332155900010CD2 /* LoginServicing.swift */; };
 		901E23062332155900010CD2 /* Router+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F52332155900010CD2 /* Router+Service.swift */; };
+		902BDEDD2382ECEE007739FE /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BDEDB2382ECEE007739FE /* UIViewPreview.swift */; };
+		902BDEDE2382ECEE007739FE /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BDEDC2382ECEE007739FE /* UIViewControllerPreview.swift */; };
 		90AAA189233394F000868BB8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AAA188233394F000868BB8 /* UIColor+Extensions.swift */; };
 		D8FA8AD1C514BE21B02821E1 /* Pods_iOSProjectTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9625F90100F5506AAD2501 /* Pods_iOSProjectTemplate.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		901E22F32332155900010CD2 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		901E22F42332155900010CD2 /* LoginServicing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServicing.swift; sourceTree = "<group>"; };
 		901E22F52332155900010CD2 /* Router+Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Service.swift"; sourceTree = "<group>"; };
+		902BDEDB2382ECEE007739FE /* UIViewPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		902BDEDC2382ECEE007739FE /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		90AAA188233394F000868BB8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		C92F9055A9B51A280F860259 /* Pods-iOSProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F17E24FDDBC417C61499B736 /* Pods-iOS Project Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Project Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 		901E22E32332155900010CD2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				902BDED62382EC8A007739FE /* SwiftUIPreview */,
 				901E22E42332155900010CD2 /* EventSource.swift */,
 				90AAA188233394F000868BB8 /* UIColor+Extensions.swift */,
 			);
@@ -194,6 +199,15 @@
 				901E22F32332155900010CD2 /* LoginService.swift */,
 			);
 			path = LoginService;
+			sourceTree = "<group>";
+		};
+		902BDED62382EC8A007739FE /* SwiftUIPreview */ = {
+			isa = PBXGroup;
+			children = (
+				902BDEDB2382ECEE007739FE /* UIViewPreview.swift */,
+				902BDEDC2382ECEE007739FE /* UIViewControllerPreview.swift */,
+			);
+			path = SwiftUIPreview;
 			sourceTree = "<group>";
 		};
 		ADA5C3EAA1BFFD7741F396A0 /* Pods */ = {
@@ -345,6 +359,8 @@
 				901E23032332155900010CD2 /* LoginRouter.swift in Sources */,
 				901E22F92332155900010CD2 /* UserDefaultsKeyValueStorage.swift in Sources */,
 				901E22F62332155900010CD2 /* KeyValueStorage.swift in Sources */,
+				902BDEDD2382ECEE007739FE /* UIViewPreview.swift in Sources */,
+				902BDEDE2382ECEE007739FE /* UIViewControllerPreview.swift in Sources */,
 				901E23022332155900010CD2 /* LoginProviding.swift in Sources */,
 				901E22D1233214A900010CD2 /* RootViewController.swift in Sources */,
 				901E22CF233214A900010CD2 /* AppDelegate.swift in Sources */,
