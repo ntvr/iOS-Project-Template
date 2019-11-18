@@ -28,6 +28,7 @@
 		901E23042332155900010CD2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F32332155900010CD2 /* LoginService.swift */; };
 		901E23052332155900010CD2 /* LoginServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F42332155900010CD2 /* LoginServicing.swift */; };
 		901E23062332155900010CD2 /* Router+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E22F52332155900010CD2 /* Router+Service.swift */; };
+		90AAA189233394F000868BB8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AAA188233394F000868BB8 /* UIColor+Extensions.swift */; };
 		D8FA8AD1C514BE21B02821E1 /* Pods_iOSProjectTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9625F90100F5506AAD2501 /* Pods_iOSProjectTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		901E22F32332155900010CD2 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		901E22F42332155900010CD2 /* LoginServicing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServicing.swift; sourceTree = "<group>"; };
 		901E22F52332155900010CD2 /* Router+Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Service.swift"; sourceTree = "<group>"; };
+		90AAA188233394F000868BB8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		C92F9055A9B51A280F860259 /* Pods-iOSProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F17E24FDDBC417C61499B736 /* Pods-iOS Project Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Project Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template.debug.xcconfig"; sourceTree = "<group>"; };
 		F9C7D3FFCE22D5B1F806E3EB /* Pods-iOS Project Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Project Template.release.xcconfig"; path = "Target Support Files/Pods-iOS Project Template/Pods-iOS Project Template.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				901E22E42332155900010CD2 /* EventSource.swift */,
+				90AAA188233394F000868BB8 /* UIColor+Extensions.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				901E22FF2332155900010CD2 /* CredentialAuthorizing.swift in Sources */,
 				901E22FD2332155900010CD2 /* Request+Decodable.swift in Sources */,
 				901E23012332155900010CD2 /* OAuthProviding.swift in Sources */,
+				90AAA189233394F000868BB8 /* UIColor+Extensions.swift in Sources */,
 				901E22F72332155900010CD2 /* KeychainKeyValueStorage.swift in Sources */,
 				901E22FB2332155900010CD2 /* Alamofire+SwiftResult.swift in Sources */,
 				901E23052332155900010CD2 /* LoginServicing.swift in Sources */,
